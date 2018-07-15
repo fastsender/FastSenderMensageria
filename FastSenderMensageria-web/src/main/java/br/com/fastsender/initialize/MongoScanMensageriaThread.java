@@ -20,14 +20,14 @@ public class MongoScanMensageriaThread implements Runnable {
     
     @Override
     public void run() {
-        LOG4J.info("THREAD INICIADA - [INICIANDO CONSULTA XML NFSE]");
-        DB db = MONGODB_CONNECTION.getDB();
-        xmlNfseList.addAll(getXmlFacade().recuperaXmls(db));
-        
         try {
+            LOG4J.info("THREAD INICIADA - [INICIANDO CONSULTA XML NFSE]");
+            DB db = MONGODB_CONNECTION.getDB();
+            xmlNfseList.addAll(getXmlFacade().recuperaXmls(db));
+            LOG4J.info("THREAD FINALIZADA P/ TESTE SOMENTE- [INICIANDO CONSULTA XML NFSE]");
             Thread.sleep(100000l);
         } catch (InterruptedException ex) {
-            LOG4J.error("");
+            LOG4J.error("FALHA - CONTATO O SUPORTE");
         }
     }
 
