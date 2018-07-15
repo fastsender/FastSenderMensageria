@@ -12,11 +12,6 @@
         <module>FastSenderMensageria-ejb</module>
     </modules>
     <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>FastSenderMensageriaMongo</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         
         <dependency>
             <groupId>log4j</groupId>

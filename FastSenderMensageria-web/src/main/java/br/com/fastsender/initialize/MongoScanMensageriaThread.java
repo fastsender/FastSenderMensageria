@@ -24,7 +24,6 @@ public class MongoScanMensageriaThread implements Runnable {
         DB db = MONGODB_CONNECTION.getDB();
         xmlNfseList.addAll(getXmlFacade().recuperaXmls(db));
         
-        
         try {
             Thread.sleep(100000l);
         } catch (InterruptedException ex) {
