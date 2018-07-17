@@ -25,8 +25,8 @@ public class MongoScanMensageriaThread implements Runnable {
             DB db = MONGODB_CONNECTION.getDB();
             xmlNfseList.addAll(getXmlFacade().recuperaXmls(db));
             LOG4J.info("THREAD FINALIZADA P/ TESTE SOMENTE- [INICIANDO CONSULTA XML NFSE]");
-            Thread.sleep(100000l);
-        } catch (InterruptedException ex) {
+//            Thread.sleep(100000l);
+        } catch (Exception ex) {
             LOG4J.error("FALHA - CONTATO O SUPORTE");
         }
     }

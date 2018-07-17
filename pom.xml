@@ -9,7 +9,8 @@
     <modules>
         <module>FastSenderMensageria-ear</module>
         <module>FastSenderMensageria-web</module>
-        <module>FastSenderMensageria-ejb</module>
+    <module>FastSenderMensageria-ejb</module>
+        <module>../FastSenderMongoBusiness</module>
     </modules>
     <dependencies>
         
